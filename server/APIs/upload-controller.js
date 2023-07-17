@@ -19,7 +19,8 @@ const uploadController = (req, res) => {
             arrOfFiles.forEach((eachFile) => {
                 const extension = path.extname(eachFile.originalFilename);
                 if (extension === '.jpg' || extension === '.docx' || extension === '.pdf' ||
-                    extension === '.png' || extension === '.JPG' || extension === '.PNG') {
+                    extension === '.png' || extension === '.JPG' || extension === '.PNG' || 
+                    extension === '.jpeg') {
                     const newFilePath = `${eachFile.filepath}.${extension}`;
                     fs.renameSync(eachFile.filepath, newFilePath);
                     eachFile.filepath = newFilePath;

@@ -36,7 +36,7 @@ const InputForm = () => {
 
     useEffect(() => {
         reset({ name: payloadData.name, email: payloadData.email, message: payloadData.message });
-    }, [reset]);
+    }, [payloadData.name, payloadData.email, payloadData.message, reset]);
 
     return (
         <Fragment>

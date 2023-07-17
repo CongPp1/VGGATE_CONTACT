@@ -1,11 +1,11 @@
 {
   "development": {
     "username": "postgres",
-    "password": "giathinh1996",
-    "database": "vggate",
+    "password": "new_password",
+    "database": "postgres",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "port": 5433
+    "port": 5432
   },
   "test": {
     "username": "root",
