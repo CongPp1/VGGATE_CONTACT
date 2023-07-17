@@ -1,0 +1,459 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo-vg {
+  top: 95px;
+  left: 456px;
+  width: 189px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.btn-header {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-header-active {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-header-active::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 75%;
+  background-color: #43baff;
+  bottom: 0;
+  left: 14px;
+}
+
+.btn-header-active:hover .btn-text {
+  cursor: pointer;
+  color: #179a76;
+  transition: color 0.5s;
+}
+
+.btn-header::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #43baff;
+  bottom: 0;
+  left: 14px;
+  transition: width 0.5s;
+}
+
+.btn-header:hover::after {
+  width: 75%;
+}
+
+.btn-header:hover .btn-text {
+  cursor: pointer;
+  color: #179a76;
+  transition: color 0.5s;
+}
+
+.btn-text {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  /* Các Button được căn trên cùng và ngang hàng với khoảng cách đều nhau */
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+}
+
+.btn-group a {
+  margin-top: 5px;
+  margin-left: 300px;
+  position: relative;
+}
+
+.body {
+  position: relative;
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.body-box {
+  margin-top: 15px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  width: 1654px;
+  background-color: #1c7e64;
+  box-sizing: border-box;
+  font-size: 43px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  color: white;
+  background-image: url(https://vggate.com/wp-content/uploads/2021/01/bg-banner-home-7.png);
+}
+
+/* .header-nav {
+  position: fixed;
+} */
+
+.home-link a {
+  color: #aeaacb;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.input-form {
+  width: 566px;
+  height: 600px;
+  background-image: linear-gradient(90deg, #179a76 0%, #eb3225 100%);
+  box-sizing: border-box;
+  font-size: 36px;
+  margin-bottom: 0px;
+  flex-direction: column;
+  word-wrap: break-word;
+}
+
+.input-form small {
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-left: 60px;
+  margin: 0 0 10px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.875;
+  font-weight: 400;
+  color: #fff;
+}
+
+.input-form h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 40px;
+  font-size: 40px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+/* .input-field {
+  height: 600px;
+  width: 20px;
+  padding-left: 30px;
+  box-sizing: border-box;
+} */
+
+/* .header-nav {
+  position: fixed;
+} */
+
+.send-btn button {
+  margin: 5px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 40px;
+  margin-top: 20px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.42857143;
+  text-align: center;
+}
+
+.not-msg {
+  /* padding-right: 210px;
+  padding-bottom: 20px;
+  margin-left: 35px; */
+  height: 51px;
+  width: 471px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+input::placeholder {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+textarea::placeholder {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+.is-msg {
+  height: 150px;
+  width: 471px;
+  margin-left: 40px;
+  margin-top: 30px;
+  overflow-wrap: break-word;
+}
+
+.file-input {
+  margin-left: 40px;
+  margin-top:30px;
+}
+
+.contact-form {
+  color: red;
+  padding: 20px 0;
+}
+
+.contact-form span {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-form h2 {
+  font-size: 40px;
+  color: black;
+}
+
+.contact-form p {
+  word-wrap: break-word;
+  color: #6d6d6d;
+}
+
+.contact-container {
+  width: 566px;
+  /* height: 591px; */
+  margin-right: 95px;
+}
+
+.addr-form {
+  /* width: 475px; */
+  padding: 20px 40px;
+  line-height: 35px;
+  transition: all 0.3s linear;
+  /* height: 139px; */
+}
+
+.addr-form:hover {
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
+
+.addr-form h2 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  display: block;
+  /* margin-block-start: 2.33em;
+  margin-block-end: 2.33em; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.addr-form p {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
+  display: block;
+  color: #6d6d6d;
+}
+
+.mail-form {
+  padding: 20px 40px;
+  transition: all 0.3s linear;
+}
+
+.mail-form:hover {
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mail-form h2 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  display: block;
+  /* margin-block-start: 2.33em;
+  margin-block-end: 2.33em; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.mail-form p {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
+  display: block;
+  color: #6d6d6d;
+}
+
+.contact-link {
+  display: flex;
+}
+
+.skype-link {
+  width: 50%;
+  padding: 20px 40px 20px;
+  transition: all 0.3s linear;
+}
+
+.skype-link:hover {
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
+
+.whatapp-link {
+  width: 50%;
+  padding: 20px 40px 20px;
+  transition: all 0.3s linear;
+}
+
+.whatapp-link:hover {
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  width: 1200px;
+  height: 456px;
+}
+
+.img-footer {
+  display: flex;
+  max-width: 40%;
+  margin: auto;
+  justify-content: flex-start;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+  color: #aeaacb;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: var(--e-global-typography-text-font-weight);
+}
+
+.footer-container {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.footer-container-comp {
+  display: flex;
+  padding: 20px 40px 20px;
+  justify-content: space-around;
+}
+
+.footer-menu-container {
+  margin-left: 400px;
+}
+
+.footer-comp-2 h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #403e4f;
+}
+
+.footer-comp-3-mailbox h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #403e4f;
+}
+
+.footer-comp-3-phone h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #403e4f;
+  margin-top: 20px;
+}
+
+.link-list {
+  display: flex;
+  padding: 20px 40px 20px;
+}
+
+.linkedin-link {
+  width: 50%;
+}
+
+.github-link {
+  width: 50%;
+}
+
+.map {
+  margin-top: 200px;
+}
+
+.review-form {
+  display: flexbox;
+  margin-top: 100px;
+  margin-left: 600px;
+  width: 500px;
+  height: 400px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  background-image:linear-gradient(90deg, #179a76 0%, #eb3225 100%);
+}
+
+.review-form-input {
+  padding-top: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.button-submit {
+  margin-top: 10px;
+  margin-left: 210px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(237, 140, 13);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  outline: none;
+}
+
+.button-back { 
+  margin-top: 10px;
+  margin-left: 210px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(237, 140, 13);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  outline: none;
+}
+
+.input-field small{
+  color: red;
+}
